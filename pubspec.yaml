@@ -1,0 +1,42 @@
+name: quicknotes
+description: QuickNotes - a modern, offline-first note-taking application built with Flutter.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Local persistence
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  shared_preferences: ^2.2.3
+
+  # Secure storage (reserved for any future sensitive values, such as an app lock PIN)
+  flutter_secure_storage: ^9.2.2
+
+  # Utilities
+  uuid: ^4.4.0
+  intl: ^0.19.0
+
+  # Reminders (wired up in Stage 4)
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+  sqflite_common_ffi_web: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  sqflite_common_ffi: ^2.3.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/quicknotes_icon.png
